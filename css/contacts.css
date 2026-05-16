@@ -1,0 +1,99 @@
+.main__communication {
+}
+.communication {
+    margin-top: 70px;
+}
+.communication__container {
+}
+.communication__title {
+    color: white;
+    margin-bottom: 50px;
+}
+.communication__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.communication__contacts {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 20px;
+    gap: 20px;
+    
+}
+.communication__item {
+    alignment-baseline: baseline;
+}
+.communication__icon{
+    display: inline-block;
+     width: 35px;
+    height: 35px;
+}
+.communication__icon svg{
+    width: 100%;
+    height: 100%;
+}
+.communication__link {
+}
+.communication__map iframe{
+    height: 300px;
+}
+.communication__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #0F1218;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+}
+.communication__form-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.communication__form-input {
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px ;
+    background-color: #020203;
+    color: white;
+}
+
+.communication__form-select-button {
+    color: white;
+    background-color: #020203;
+}
+.communication__form-select-button:hover{
+    border: none;
+}
+
+.communication__form-select-list {
+ background-color: #000000;
+     
+    }
+    
+
+.communication__form-select-item {
+    height: 30px;
+        color: white;
+        background-color: black;
+    text-align: left;
+    border: 1px solid rgb(29, 29, 29);
+    margin-bottom: 5px;
+}
+
+
+.textarea {
+    max-width: 360px;
+    min-height: 50px;
+    max-height: 330px;
+    padding: 15px 10px;
+}
+.communication__form-button {
+   width: 100%;
+}

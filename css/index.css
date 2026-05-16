@@ -1,0 +1,364 @@
+@import './fonts.css';
+.main__hero {
+}
+.hero {
+    height: 800px;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/index/bg.jpg) no-repeat center/cover;
+}
+.hero__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+
+}
+.hero__title , .hero__subtitle{
+    text-align: center;
+}
+.hero__title{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+}
+.hero__subtitle {
+    color: #00A2FF;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero__button {
+}
+.main__about {
+}
+.abour {
+    margin-top: 100px;
+}
+.about__container {
+}
+.about__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+.about__info {
+    max-width: 900px;
+}
+.about__title{}
+
+.about__text-content {
+    margin-top: 50px;
+}
+.about__text {
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+.about__text:last-child{
+    margin-bottom: 0;
+}
+.about__img{
+    min-width: 400px;
+    min-height: 270px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.about__img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.main__philosophy {
+}
+.philosophy {
+     margin-top: 100px;
+}
+.philosophy__container {
+ 
+}
+.philosophy__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.philosophy__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:center;
+}
+.philosophy__card {
+    background-color: #00A2FF;
+    width: 340px;
+    height: 370px;
+    position: relative;
+    border-radius: 20px;
+
+}
+.philosophy__card-inner{
+    position: absolute;
+     border-radius: 18px;
+    width: 325px;
+    height: 370px;
+    background-color: #0F1218;
+    right: 0;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+.philosophy__card-icon {
+}
+.philosophy__card-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.philosophy__card-text {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.main__gallery {
+}
+.gallery {
+    margin-top: 100px;
+}
+.gallery__container {
+}
+.gallery__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gallery__inner, .checklist__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery__arrow {
+   background: transparent;
+   transition: all 0.3s ease;
+   
+}
+
+.gallery__arrow--prev:hover{
+    transform: translateX(-5px) scale(1.1);
+}
+.gallery__arrow--next:hover{
+    transform: translateX(5px) scale(1.1);
+}
+
+
+.gallery__grid {
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+    gap: 30px;
+}
+.gallery__img {
+    max-width: 450px;
+    max-height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery__img--hidden {
+    display: none;
+}
+.gallery__img img{
+    width: 100%;
+    height: 100%;
+}
+.gallery__arrow--next {
+}
+
+.hero__tip-widget {
+    text-align: center;
+}
+
+.tip-widget__text {
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+    min-height: 50px; /* Чтобы блок не прыгал по высоте */
+    transition: opacity 0.5s ease;
+}
+.muscle-map {
+    margin: 100px 0;
+}
+
+
+.muscle-map__container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+justify-content: center
+
+}
+.muscle-map-img {
+    width: 300px;
+    height: 100%;
+    cursor: pointer;
+
+}
+.muscle-map__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   flex: 0 1 600px;
+   
+}
+.muscle-map__title {
+  
+}
+.title {
+}
+.muscle-map__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.muscle-map__group {
+    fill: #444; 
+    cursor: pointer;
+    transition: fill 0.3s ease, filter 0.3s ease; 
+}
+
+.muscle-map__group:hover {
+    fill: #00a2ff; 
+    filter: drop-shadow(0 0 8px rgba(0, 162, 255, 0.7)); 
+}
+
+
+.muscle-map__exercises{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    
+}
+
+.muscle-map__subtitle{
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.muscle-map__desc{
+    font-size:20px;
+
+}
+
+.checklist{
+    margin: 70px 0;
+}
+.checklist__title{
+ text-align: center;   
+ margin-bottom: 40px;
+}
+.checklist__box {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    width: 350px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.checklist__box-title {
+    font-size: 1.4rem;
+    color: #00a2ff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checklist__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checklist__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+/* Скрываем стандартный чекбокс */
+.checklist__input {
+    display: none;
+}
+
+/* Кастомный чекбокс */
+.checklist__custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a2ff;
+    border-radius: 4px;
+    margin-right: 15px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Состояние при нажатии */
+.checklist__input:checked + .checklist__custom-checkbox {
+    background-color: #00a2ff;
+}
+
+.checklist__input:checked + .checklist__custom-checkbox::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+}
+
+.checklist__input:checked ~ .checklist__item {
+    color: rgba(255,255,255,0.4);
+}
+
+.checklist__reset {
+    margin-top: 25px;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.3);
+    text-decoration: underline;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.checklist__reset:hover {
+    color: #00a2ff;
+}
+
+.relax {
+}
+.relax__container {
+}
+.relax__title {
+    margin-bottom: 30px;
+}
+.title {
+}
+.relax__items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

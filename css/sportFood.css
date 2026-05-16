@@ -1,0 +1,143 @@
+.main {
+}
+.nutrition-promo__main {
+}
+.nutrition-promo {
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('../img/sportFood/bg.jpg') no-repeat 100% / cover;
+    min-height: 300px;
+}
+.nutrition-promo__container {
+
+}
+.nutrition-promo__title {
+}
+.page__title {
+
+}
+.nutrition-promo__subtitle {
+    font-size: 26px;
+    text-align: center;
+}
+.nutrition-grid__main {
+}
+.nutrition-grid {
+    margin: 50px;
+}
+.nutrition-grid__container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+}
+.nutrition-card {
+    background-color: #0F1218;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.nutrition-card__header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+}
+.nutrition-card__icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.nutrition-card__badge {
+    text-transform: uppercase;
+    color: #00A2FF;
+    background-color: rgba(0, 162, 255, 0.102);
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.nutrition-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px rgba(136, 146, 176, 0.5) solid;
+}
+.nutrition-card__text {
+    font-size: 22px;
+    min-height: 150px;
+    letter-spacing: 1px;
+}
+.nutrition-card__info {
+    color: #8892B0;
+     letter-spacing: 1px;
+}
+.benefits {
+    margin: 50px 0;
+}
+.benefits__main {
+}
+.container__benefits {
+}
+.benefits__title {
+}
+.title {
+}
+.benefits__text {
+    margin-top: 50px;
+     font-size: 26px;
+}
+
+.benefits__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.benefits__item {
+
+}
+.benefits__item-title {
+      font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.benefits__item-text {
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.composition__main {
+}
+.composition {
+    margin: 50px 0;
+}
+.container__composition {
+}
+.composition__title {
+}
+.composition__list {
+     margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+.composition__item {
+     font-size: 26px;
+}
+.composition__item-name {
+    font-weight: 600;
+}
+.calcs {
+}
+.calcs_container {
+}
+.calcs__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+

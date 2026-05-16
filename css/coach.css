@@ -1,0 +1,281 @@
+.coach__main {
+}
+.coach {
+}
+.coach__container {
+}
+.coach__title {
+}
+
+.coach__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.coach__card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #0F1218;
+    padding: 20px;
+    border-radius: 20px;
+}
+.coach__card-img {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.coach__card-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.coach__card-content {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.coach__card-name {
+}
+.coach__card-title {
+    font-weight: 700;
+    font-size: 28px;
+}
+.coach__card-text {
+    font-size: 24px;
+}
+.coach__card-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.coach__stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+}
+.coach__stat-digit, .coach__stat-digit-mark {
+    font-weight: 700;
+    color: #0072B4;
+}
+
+.coach__stat-block{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 700;
+    color: #0072B4;
+}
+.coach__stat-desc {
+}
+.coach__card-methodology {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.interactive {
+    margin: 20px 0;
+}
+.interactive__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+.button {
+}
+.coach__calc{
+    flex: 1;
+}
+.generator{
+    flex: 1.5;
+}
+.generator__button {
+    width: max-content;
+    align-self: center;
+}
+
+.generator__container{
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+
+}
+/* Основной контейнер, в который JS вставляет контент */
+.generator__train {
+    background: rgba(15, 15, 20, 0.95);
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Эффект неонового свечения сверху */
+.generator__train::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0072B4, #82bfe2);
+    box-shadow: 0 0 15px rgba(0, 114, 180, 0.8);
+}
+
+/* Шапка карточки */
+.generator__header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.generator__target-title,.advice__subtitle {
+    font-size: 24px;
+    color: #0072B4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 114, 180, 0.3);
+}
+
+.generator__description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
+
+/* Секция режима (схема) */
+.generator__scheme {
+    background: rgba(0, 114, 180, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #0072B4;
+    margin-bottom: 25px;
+}
+
+.generator__label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #0072B4;
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.generator__scheme-text {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Список упражнений */
+.generator__list {
+    display: grid;
+    gap: 10px;
+}
+
+.generator__list-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.generator__list-item:hover {
+    background: rgba(0, 114, 180, 0.1);
+    border-color: rgba(0, 114, 180, 0.3);
+    transform: translateX(5px);
+}
+
+.generator__list-item::before {
+    content: '•';
+    color: #0072B4;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Футер и питание */
+.generator__footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.generator__nutrition, .advice__content {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.generator__nutrition-text {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.advice {
+    margin: 50px;
+}
+.advice__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.advice__ttile{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.advice__btn-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.button {
+}
+.advice__button {
+    text-transform: uppercase;
+    width:140px;
+}
+.advice__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    align-items: center;
+}
+.advice__button--active{
+    
+   background: linear-gradient(90deg, #0072B4, #82bfe2);
+    box-shadow: 0 0 15px rgba(0, 114, 180, 0.8);
+}
+.advice__subtitle{
+
+}
+.advice__text {
+    font-size: 1.1rem;
+    line-height: 1.7; /* Увеличенный межстрочный интервал для читаемости "воды" */
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 15px;
+    text-align: left;
+}
