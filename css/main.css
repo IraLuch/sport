@@ -1,189 +1,191 @@
-@import './fonts.css';
+@import "./fonts.css";
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
-     max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.main{
-    background-color:#0B0B15 ;
-    color: white;
+.main {
+  background-color: #0b0b15;
+  color: white;
 }
 
 .button {
-    color: white;
-    background-color: #00A2FF; 
-    padding: 0 15px;
-    height: 60px;
-    border-radius: 20px;
-       font-family: 'Oswald', sans-serif;
-     font-weight: 600;
-     font-size: 22px;
-     letter-spacing: 2px;
-     transition: all 0.3s ease;
+  color: white;
+  background-color: #00a2ff;
+  padding: 0 15px;
+  height: 60px;
+  border-radius: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
 }
 
-.button:hover{
-    transform: scale(1.03);
-    background-color:#0072B4 ;
+.button:hover {
+  transform: scale(1.03);
+  background-color: #0072b4;
 }
 
-.title{
-        font-family: 'Oswald', sans-serif;
-        color: #00A2FF;
-        font-size: 52px;
-        letter-spacing: 5px;
-        font-weight: 600;
+.title {
+  font-family: "Oswald", sans-serif;
+  color: #00a2ff;
+  font-size: 52px;
+  letter-spacing: 5px;
+  font-weight: 600;
 }
 
 .page__title {
-    text-transform: uppercase;
-    font-size: 55px;
-    font-weight: 700;
-     font-family: 'Oswald', sans-serif;
-     letter-spacing: 5px;
-     text-align: center;
-     margin: 50px 50px;
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 50px 50px;
 }
-
 
 .calcs__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-   
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .calc {
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 20px;
-      padding: 20px;
-    
-    
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
 }
-.calc__input{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.calc__input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .calc__title {
-    font-weight: 600;
-    font-size: 26px;
-    text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
 }
-.calc__res{
-    display: none;
-    background-color: #00A2FF;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+.calc__res {
+  display: none;
+  background-color: #00a2ff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
-.calc__res--active{
-    display: block;
+.calc__res--active {
+  display: block;
 }
 
-.calc__res-info{
-    font-size: 20px;
-    font-weight: 550;
+.calc__res-info {
+  font-size: 20px;
+  font-weight: 550;
 }
-.calc__mess{
-    color: rgb(177, 23, 23);
-    font-weight: 550;
-    font-size: 18px;
-    display: none;
+.calc__mess {
+  color: rgb(177, 23, 23);
+  font-weight: 550;
+  font-size: 18px;
+  display: none;
 }
-.calc__mess--active{
-    display: block;
+.calc__mess--active {
+  display: block;
 }
 .calc__row {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.calc__row-label {
-}
+
 .calc__row-input {
-    height: 50px;
-    border: 1px solid #00A2FF;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 18px;
-   
+  height: 50px;
+  border: 1px solid #00a2ff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
 }
-.calc__row-input:focus{
-      border: 3px solid #00A2FF;
+.calc__row-input:focus {
+  border: 3px solid #00a2ff;
 }
 .calc__button {
-    align-self: center;
-    font-size: 18px;
-    height: 40px;
+  align-self: center;
+  font-size: 18px;
+  height: 40px;
 }
 .form-select {
-    width: 100%;
-    position: relative;
-    
+  width: 100%;
+  position: relative;
 }
-.form-select-button:focus{
-    border: 3px solid #00A2FF;
+.form-select-button:focus {
+  border: 3px solid #00a2ff;
 }
-.form-select-button{
-    padding: 10px ;
-    height: 50px;
-    border-radius: 20px;
-    position: relative;
-    width: 100%;
-    text-align: left;
-      background-color: white;
-    
+.form-select-button {
+  padding: 10px;
+  height: 50px;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background-color: white;
 }
-.form-select-button::after{
-    content: '';
-    display: block;
-    position: absolute;
-    background: url(../img/icons/list.png) no-repeat;
-    width: 18px;
-    height: 15px;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
+.form-select-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../img/icons/list.png) no-repeat;
+  width: 18px;
+  height: 15px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
 
-.form-select-button--active::after{
-    transform: translateY(-50%) rotate(180deg);
+.form-select-button--active::after {
+  transform: translateY(-50%) rotate(180deg);
 }
 
-.form-select-list{
-    border:1px solid white;
-    background-color: #000000;
-    border-radius: 20px;
-     display: none;
-     position: absolute;
-    width: 100%;
-    z-index: 1000;       
-    font-size: 13px;
-    padding: 3px ;
-
+.form-select-list {
+  border: 1px solid white;
+  background-color: #000000;
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  font-size: 13px;
+  padding: 3px;
 }
-.form-select-list--active{
-        display: block;
+.form-select-list--active {
+  display: block;
 }
-.form-select-item{
-    color: black;
-    height: 50px;
-    border-radius: 10px;
-    padding: 15px;
-    cursor: pointer;
-     border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
-    width: 100%;
+.form-select-item {
+  color: black;
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+}
 
+@media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 35px;
+  }
 }
